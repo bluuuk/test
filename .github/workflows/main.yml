@@ -1,8 +1,8 @@
 name: Test PR Target
 
 on:
-  pull_request_target: {}
-
+  push:
+    branches: main
 jobs:
   test:
     runs-on: ubuntu-latest
