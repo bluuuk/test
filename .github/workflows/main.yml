@@ -1,0 +1,13 @@
+name: Test PR Target
+
+on:
+  pull_request_target: {}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        run: echo "Repository - ${{ github.repository }}"
+      - name: test2
+        run: echo "Repository - ${{ github.repository_owner }}"
